@@ -48,10 +48,10 @@ $("#add-train-btn").on("click", function(event) {
     var trainFrequency = childSnapshot.val().frequency;
   
     // Train Schedule Info
-    console.log(trainName);
-    console.log(trainDestination);
-    console.log(trainFirstTime);
-    console.log(trainFrequency);
+    //console.log(trainName);
+    //console.log(trainDestination);
+    //console.log(trainFirstTime);
+    //console.log(trainFrequency);
   
     // Prettify the train first start
     var trainFirstPretty = moment(trainFirstTime).format("YYYY-MM-DD HH:mm");
