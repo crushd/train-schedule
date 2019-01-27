@@ -13,9 +13,9 @@ body {
 }
 
 .card-title {
-    background-color:goldenrod;
+    /*background-color:goldenrod;*/
     font-weight: bold;
-    padding-left:1rem;
+    padding:.5rem 0 0 1rem;
 }
 
 .jumbotron {
