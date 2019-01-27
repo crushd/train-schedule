@@ -6,12 +6,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <!-- Moment.js -->
+    <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
 
+    <!-- Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
+    <!-- Style -->
     <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://www.gstatic.com/firebasejs/5.8.1/firebase.js"></script>
+    <script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDqapsFC1qxBFkCAcVT2S6eI-G1xY8c6U0",
+        authDomain: "bootcampspot-8f8fb.firebaseapp.com",
+        databaseURL: "https://bootcampspot-8f8fb.firebaseio.com",
+        projectId: "bootcampspot-8f8fb",
+        storageBucket: "bootcampspot-8f8fb.appspot.com",
+        messagingSenderId: "1042100774572"
+    };
+    firebase.initializeApp(config);
+    </script>
 
   </head>
   <body>
@@ -24,9 +41,9 @@
             <!--p class="lead">Jumbo helper text</p-->
             <hr class="my-2">
             <!--p>More info</p-->
-            <p class="lead">
+            <!--p class="lead">
                 <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
-            </p>
+            </p-->
         </div>
 
         <div class="card">
@@ -34,7 +51,7 @@
             <div class="card-body">
 
                 <!-- table for firebase data -->
-                <table class="table">
+                <table class="table" id="train-schedule-table">
                     <thead>
                         <tr>
                             <th scope="col">Train Name</th>
@@ -45,13 +62,6 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr scope="row">
-                            <th>Lorem Impsum</th>
-                            <td>Dolor Sitar</td>
-                            <td>999</td>
-                            <td>23:59</td>
-                            <td>999</td>
-                        </tr>
                     </tbody>
                 </table>
 
@@ -65,33 +75,33 @@
                 <!-- input form -->
                 <form>
                     <div class="form-group">
-                      <label for="train-name">Train Name</label>
-                      <input type="text" name="trainName" id="train-name" class="form-control" placeholder="">
+                      <label for="train-name-input">Train Name</label>
+                      <input type="text" name="trainName" id="train-name-input" class="form-control" placeholder="">
                       <!-- small id="helpId" class="text-muted">Help text</small -->
                     </div>
 
                     
                     <div class="form-group">
-                        <label for="train-destination">Train Name</label>
-                        <input type="text" name="trainDestination" id="train-destination" class="form-control" placeholder="">
+                        <label for="train-destination-input">Train Destination</label>
+                        <input type="text" name="trainDestination" id="train-destination-input" class="form-control" placeholder="">
                         <!-- small id="helpId" class="text-muted">Help text</small -->
                     </div>
 
                     
                     <div class="form-group">
-                        <label for="first-train-time">First Train Time (HH:mm)</label>
-                        <input type="text" name="firstTrainTime" id="first-train-time" class="form-control" placeholder="">
+                        <label for="first-train-time-input">First Train Time (HH:mm)</label>
+                        <input type="text" name="firstTrainTime" id="first-train-time-input" class="form-control" placeholder="">
                         <!-- small id="helpId" class="text-muted">Help text</small -->
                     </div>
 
                     
                     <div class="form-group">
-                        <label for="train-frequency">Frequency (Minutes)</label>
-                        <input type="text" name="trainFrequency" id="train-frequency" class="form-control" placeholder="">
+                        <label for="train-frequency-input">Frequency (Minutes)</label>
+                        <input type="text" name="trainFrequency" id="train-frequency-input" class="form-control" placeholder="">
                         <!-- small id="helpId" class="text-muted">Help text</small -->
                     </div>
                     
-                    <button type="submit" class="btn btn-primary">Add Train</button>
+                    <button type="submit" class="btn btn-primary" id="add-train-btn">Add Train</button>
 
                 </form>
 
