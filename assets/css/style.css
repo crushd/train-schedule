@@ -1,0 +1,29 @@
+html {
+    width:100%;
+    height:100%;
+}
+
+body {
+    background: url("../images/qbkls.png") repeat;
+}
+
+.card {
+    margin:1rem 0;
+    box-shadow: 2px 2px 5px #666;
+}
+
+.card-title {
+    background-color:goldenrod;
+    font-weight: bold;
+    padding-left:1rem;
+}
+
+.jumbotron {
+    background-image: url("../images/trainbackground.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+th {
+    font-weight: bold;
+}

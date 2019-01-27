@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Choo choo mother friendlies</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+
+  </head>
+  <body>
+      
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h1 class="display-3">Train Schedule</h1>
+            <!--p class="lead">Jumbo helper text</p-->
+            <hr class="my-2">
+            <!--p>More info</p-->
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Train Schedules</div>
+            <div class="card-body">
+
+                <!-- table for firebase data -->
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Train Name</th>
+                            <th scope="col">Destination</th>
+                            <th scope="col">Frequency (Min.)</th>
+                            <th scope="col">Next Arrival</th>
+                            <th scope="col">Minutes Away</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr scope="row">
+                            <th>Lorem Impsum</th>
+                            <td>Dolor Sitar</td>
+                            <td>999</td>
+                            <td>23:59</td>
+                            <td>999</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-title">Add a Train</div>
+            <div class="card-body">
+
+                <!-- input form -->
+                <form>
+                    <div class="form-group">
+                      <label for="train-name">Train Name</label>
+                      <input type="text" name="trainName" id="train-name" class="form-control" placeholder="">
+                      <!-- small id="helpId" class="text-muted">Help text</small -->
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="train-destination">Train Name</label>
+                        <input type="text" name="trainDestination" id="train-destination" class="form-control" placeholder="">
+                        <!-- small id="helpId" class="text-muted">Help text</small -->
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="first-train-time">First Train Time (HH:mm)</label>
+                        <input type="text" name="firstTrainTime" id="first-train-time" class="form-control" placeholder="">
+                        <!-- small id="helpId" class="text-muted">Help text</small -->
+                    </div>
+
+                    
+                    <div class="form-group">
+                        <label for="train-frequency">Frequency (Minutes)</label>
+                        <input type="text" name="trainFrequency" id="train-frequency" class="form-control" placeholder="">
+                        <!-- small id="helpId" class="text-muted">Help text</small -->
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Add Train</button>
+
+                </form>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>
