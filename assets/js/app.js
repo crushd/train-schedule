@@ -70,7 +70,7 @@ $("#add-train-btn").on("click", function(event) {
       $("<td>").text(trainName),
       $("<td>").text(trainDestination),
       $("<td>").text(trainFrequency),
-      $("<td>").text(nextTrain),
+      $("<td>").text(moment(nextTrain).format("MMM DD, YYYY HH:mm")),
       $("<td>").text(tMinutesTillTrain)
     );
   
