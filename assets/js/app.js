@@ -24,7 +24,7 @@ $("#add-train-btn").on("click", function(event) {
     // Uploads train schedule data to the database
     database.ref('choochoo').push(newTrain);
   
-    // Logs everything to console
+    //Logs everything to console
     //console.log(newTrain.name);
     //console.log(newTrain.destination);
     //console.log(newTrain.firstTime);
@@ -46,12 +46,6 @@ $("#add-train-btn").on("click", function(event) {
     var trainDestination = childSnapshot.val().destination;
     var trainFirstTime = childSnapshot.val().firstTime;
     var trainFrequency = childSnapshot.val().frequency;
-  
-    // Train Schedule Info
-    //console.log(trainName);
-    //console.log(trainDestination);
-    //console.log(trainFirstTime);
-    //console.log(trainFrequency);
   
     // Prettify the train first start
     var trainFirstPretty = moment(trainFirstTime).format("YYYY-MM-DD HH:mm");
